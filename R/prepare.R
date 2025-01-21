@@ -138,5 +138,5 @@ cache_get <- function() {
 #' library to the library path with [local_touchstone_libpath()].
 #' @keywords internal
 install_missing_deps <- function(path_pkg, quiet = FALSE) {
-  remotes::install_deps(pkgdir = path_pkg, upgrade = "always", quiet = quiet)
+  remotes::install_deps(pkgdir = path_pkg, upgrade = "never", quiet = quiet)
 }
